@@ -9,13 +9,13 @@
     "eslint-fix": "eslint . --fix"
   },
   "husky": {
-        "hooks": {
-          "pre-commit": "lint-staged"
-        }
+    "hooks": {
+      "pre-commit": "npm run eslint-fix"
+    }
   },
    "lint-staged": {
-       "./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-         "eslint . --fix",
+       "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+         "npm run eslint-fix",
          "git add"
        ]
      },
