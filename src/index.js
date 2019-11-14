@@ -5,5 +5,5 @@ function mutiply(a,c) {
 }
 mutiply();
 app.listen(3100, ()=>{
-  console.log("server is running");
+  console.log("server is running ");
 });
