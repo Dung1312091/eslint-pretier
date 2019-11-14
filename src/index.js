@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 function mutiply(a,c) {
+  console.log('aaaaa');
   return a + c;
 }
 mutiply();
